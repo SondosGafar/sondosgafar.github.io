@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sondos Mohamed — AI & Software Engineer</title>
+<meta name="description" content="Sondos Mohamed — AI & Software Engineer. Top 10 Honors Computer Science graduate specializing in Artificial Intelligence, LLMs, RAG, machine learning and end-to-end software systems." />
+<meta property="og:title" content="Sondos Mohamed — AI & Software Engineer" />
+<meta property="og:description" content="AI & Software Engineer building end-to-end intelligent systems: LLM applications, RAG pipelines, machine learning, and full-stack software." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sondos Mohamed Mohamed Abd Elmoniem Gafar Al Engineer",
+  "jobTitle": "AI & Software Engineer",
+  "email": "mailto:sondosgafar@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mokattam", "addressCountry": "Egypt" },
+  "alumniOf": "Misr International University",
+  "knowsAbout": ["Artificial Intelligence","Machine Learning","Retrieval-Augmented Generation","Software Engineering","Natural Language Processing"]
+}
+</script>
+
+<style>
+/* ============================================================
+   2. THEME VARIABLES
+   ============================================================ */
+:root{
+  --bg:#e9eff7;
+  --bg-grad-1:rgba(120,190,255,0.45);
+  --bg-grad-2:rgba(180,225,255,0.35);
+  --bg-grad-3:rgba(255,255,255,0.9);
+
+  --surface:rgba(255,255,255,0.62);
+  --surface-2:rgba(255,255,255,0.40);
+  --surface-3:rgba(255,255,255,0.78);
+
+  --border:rgba(255,255,255,0.85);
+  --border-2:rgba(13,26,43,0.08);
+
+  --text:#0c1929;
+  --text-2:#33465c;
+  --muted:#63768c;
+
+  --accent:#0b8fd6;
+  --accent-2:#38bdf8;
+  --accent-soft:rgba(56,189,248,0.14);
+  --accent-text:#0369a1;
+
+  --shadow-sm:0 4px 18px rgba(18,42,74,0.07);
+  --shadow:0 14px 44px rgba(18,42,74,0.10);
+  --shadow-lg:0 26px 70px rgba(18,42,74,0.14);
+
+  --ring:rgba(56,189,248,0.55);
+  --radius:22px;
+  --radius-sm:14px;
+  --radius-lg:30px;
+  --maxw:1240px;
+  --nav-h:72px;
+}
+
+html[data-theme="dark"]{
+  --bg:#06090f;
+  --bg-grad-1:rgba(30,90,160,0.30);
+  --bg-grad-2:rgba(20,60,110,0.25);
+  --bg-grad-3:rgba(10,16,26,0.95);
+
+  --surface:rgba(255,255,255,0.045);
+  --surface-2:rgba(255,255,255,0.028);
+  --surface-3:rgba(255,255,255,0.065);
+
+  --border:rgba(255,255,255,0.10);
+  --border-2:rgba(255,255,255,0.07);
+
+  --text:#e9f0f9;
+  --text-2:#c2cede;
+  --muted:#8ea0b8;
+
+  --accent:#38bdf8;
+  --accent-2:#22d3ee;
+  --accent-soft:rgba(56,189,248,0.13);
+  --accent-text:#7dd3fc;
+
+  --shadow-sm:0 4px 18px rgba(0,0,0,0.35);
+  --shadow:0 16px 48px rgba(0,0,0,0.45);
+  --shadow-lg:0 30px 80px rgba(0,0,0,0.55);
+
+  --ring:rgba(56,189,248,0.65);
+}
+
+/* ============================================================
+   3. BASE STYLES
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  transition:background .45s ease,color .45s ease;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 620px at 12% -8%, var(--bg-grad-1), transparent 62%),
+    radial-gradient(820px 560px at 92% 4%, var(--bg-grad-2), transparent 60%),
+    radial-gradient(1200px 800px at 50% 110%, var(--bg-grad-3), transparent 70%),
+    var(--bg);
+  transition:background .45s ease;
+}
+body::after{
+  content:"";
+  position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(to right, rgba(120,160,210,0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120,160,210,0.07) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 78%);
+  -webkit-mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 78%);
+  opacity:.7;
+}
+html[data-theme="dark"] body::after{opacity:.35;}
+
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;}
+h1,h2,h3,h4{line-height:1.18;margin:0;font-weight:700;letter-spacing:-0.02em;}
+p{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+
+::selection{background:var(--accent-2);color:#04121f;}
+
+:focus-visible{
+  outline:2px solid var(--ring);
+  outline-offset:3px;
+  border-radius:8px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:11px;height:11px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(var(--accent-2),var(--accent));
+  border-radius:10px;border:3px solid transparent;background-clip:content-box;
+}
+
+/* ============================================================
+   4. COMPONENTS
+   ============================================================ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.section{padding:96px 0;position:relative;}
+.section-head{max-width:760px;margin-bottom:44px;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent-text);
+  background:var(--accent-soft);
+  border:1px solid var(--border);
+  padding:7px 15px;border-radius:999px;margin-bottom:18px;
+  backdrop-filter:blur(10px);
+}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 10px var(--accent-2);}
+.section-title{font-size:clamp(1.75rem,3.6vw,2.6rem);margin-bottom:14px;}
+.section-sub{color:var(--muted);font-size:1.02rem;max-width:680px;}
+
+.glass{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  backdrop-filter:blur(20px) saturate(160%);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  box-shadow:var(--shadow-sm);
+  transition:transform .4s cubic-bezier(.2,.7,.3,1),box-shadow .4s ease,border-color .4s ease,background .4s ease;
+}
+.glass:hover{box-shadow:var(--shadow);border-color:var(--ring);}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 22px;border-radius:999px;
+  font-size:.9rem;font-weight:600;
+  border:1px solid var(--border);
+  background:var(--surface-3);
+  color:var(--text);
+  cursor:pointer;
+  backdrop-filter:blur(14px);
+  transition:transform .25s ease,box-shadow .3s ease,background .3s ease,color .3s ease,border-color .3s ease;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
+.btn svg{width:16px;height:16px;flex-shrink:0;}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  color:#04121f;border-color:transparent;
+  box-shadow:0 10px 30px -8px var(--accent);
+}
+.btn-primary:hover{box-shadow:0 18px 42px -10px var(--accent);}
+html[data-theme="dark"] .btn-primary{color:#02121e;}
+
+.btn-ghost{background:transparent;}
+.btn-ghost:hover{background:var(--surface-3);}
+
+.btn-sm{padding:9px 16px;font-size:.82rem;}
+
+/* Tech pills */
+.pill{
+  display:inline-flex;align-items:center;
+  padding:6px 13px;border-radius:999px;
+  font-size:.75rem;font-weight:600;letter-spacing:.01em;
+  background:var(--surface-2);
+  border:1px solid var(--border-2);
+  color:var(--text-2);
+  backdrop-filter:blur(8px);
+  transition:background .25s ease,border-color .25s ease,color .25s ease,transform .25s ease;
+}
+.pill:hover{border-color:var(--ring);color:var(--accent-text);transform:translateY(-1px);}
+.pill.accent{background:var(--accent-soft);color:var(--accent-text);border-color:var(--border);}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.nav{
+  position:fixed;top:14px;left:0;right:0;z-index:900;
+  display:flex;justify-content:center;
+  padding:0 18px;
+  pointer-events:none;
+}
+.nav-inner{
+  pointer-events:auto;
+  width:100%;max-width:var(--maxw);
+  height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;
+  padding:0 12px 0 22px;
+  border-radius:999px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  backdrop-filter:blur(22px) saturate(170%);
+  -webkit-backdrop-filter:blur(22px) saturate(170%);
+  box-shadow:var(--shadow-sm);
+  transition:box-shadow .4s ease,background .4s ease,border-color .4s ease,height .35s ease;
+}
+.nav.scrolled .nav-inner{box-shadow:var(--shadow);}
+
+.brand{
+  display:flex;align-items:center;gap:11px;
+  font-weight:700;font-size:.98rem;letter-spacing:-0.01em;
+  flex-shrink:0;
+}
+.brand-mark{
+  width:34px;height:34px;border-radius:11px;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  display:grid;place-items:center;
+  color:#04121f;font-weight:800;font-size:.85rem;
+  box-shadow:0 6px 18px -6px var(--accent);
+}
+.brand span{white-space:nowrap;}
+
+.nav-links{display:flex;align-items:center;gap:2px;flex:1;justify-content:center;}
+.nav-links a{
+  font-size:.855rem;font-weight:500;color:var(--muted);
+  padding:9px 13px;border-radius:999px;
+  transition:color .25s ease,background .25s ease;
+  white-space:nowrap;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface-3);}
+
+.nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+
+.icon-btn{
+  width:40px;height:40px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--surface-3);
+  border:1px solid var(--border);
+  color:var(--text);cursor:pointer;
+  transition:transform .3s ease,background .3s ease,color .3s ease,box-shadow .3s ease;
+}
+.icon-btn:hover{transform:translateY(-2px);color:var(--accent-text);box-shadow:var(--shadow-sm);}
+.icon-btn svg{width:18px;height:18px;}
+
+#themeToggle .sun{display:none;}
+html[data-theme="dark"] #themeToggle .sun{display:block;}
+html[data-theme="dark"] #themeToggle .moon{display:none;}
+
+.hamburger{display:none;}
+
+/* Mobile menu */
+.mobile-menu{
+  position:fixed;inset:0;z-index:950;
+  background:rgba(6,12,22,0.45);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  opacity:0;visibility:hidden;
+  transition:opacity .3s ease,visibility .3s ease;
+}
+.mobile-menu.open{opacity:1;visibility:visible;}
+.mobile-panel{
+  position:absolute;top:0;right:0;bottom:0;
+  width:min(320px,86vw);
+  background:var(--surface-3);
+  backdrop-filter:blur(26px) saturate(180%);
+  -webkit-backdrop-filter:blur(26px) saturate(180%);
+  border-left:1px solid var(--border);
+  padding:26px 22px;
+  display:flex;flex-direction:column;gap:6px;
+  transform:translateX(100%);
+  transition:transform .38s cubic-bezier(.2,.8,.3,1);
+  overflow-y:auto;
+}
+.mobile-menu.open .mobile-panel{transform:translateX(0);}
+.mobile-panel a{
+  padding:13px 15px;border-radius:14px;
+  font-size:.95rem;font-weight:500;color:var(--text-2);
+  transition:background .25s ease,color .25s ease;
+}
+.mobile-panel a:hover{background:var(--accent-soft);color:var(--accent-text);}
+.mobile-close{align-self:flex-end;margin-bottom:10px;}
+.mobile-panel .btn{width:100%;margin-top:14px;}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  padding:calc(var(--nav-h) + 78px) 0 74px;
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.12fr 0.88fr;
+  gap:56px;align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:8px 16px;border-radius:999px;
+  background:var(--surface);border:1px solid var(--border);
+  backdrop-filter:blur(14px);
+  font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent-text);
+  margin-bottom:24px;
+  box-shadow:var(--shadow-sm);
+}
+.hero-tag .pulse{
+  width:7px;height:7px;border-radius:50%;background:#22c55e;
+  box-shadow:0 0 0 0 rgba(34,197,94,.6);
+  animation:pulse 2.4s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(34,197,94,.55);}
+  70%{box-shadow:0 0 0 10px rgba(34,197,94,0);}
+  100%{box-shadow:0 0 0 0 rgba(34,197,94,0);}
+}
+
+.hero h1{
+  font-size:clamp(2.3rem,6vw,4.15rem);
+  font-weight:800;
+  letter-spacing:-0.035em;
+  line-height:1.02;
+  margin-bottom:16px;
+}
+.hero h1 .grad{
+  background:linear-gradient(120deg,var(--accent-2),var(--accent) 55%,#6366f1);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.hero-role{
+  font-size:clamp(.95rem,2vw,1.15rem);
+  font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:20px;
+}
+.hero-desc{
+  color:var(--text-2);font-size:1.03rem;max-width:560px;margin-bottom:32px;
+}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px;}
+.hero-socials{display:flex;gap:10px;align-items:center;}
+.hero-socials a{
+  width:42px;height:42px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--surface);border:1px solid var(--border);
+  color:var(--text-2);
+  backdrop-filter:blur(12px);
+  transition:transform .28s ease,color .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.hero-socials a:hover{transform:translateY(-3px);color:var(--accent-text);box-shadow:var(--shadow);border-color:var(--ring);}
+.hero-socials svg{width:19px;height:19px;}
+
+/* Hero portrait */
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;}
+.portrait-card{
+  position:relative;
+  width:min(100%,400px);
+  aspect-ratio:4/5;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border);
+  backdrop-filter:blur(20px);
+  box-shadow:var(--shadow-lg);
+  transition:transform .55s cubic-bezier(.2,.8,.3,1);
+}
+.portrait-card:hover{transform:translateY(-6px) scale(1.012);}
+.portrait-card img{
+  width:100%;height:100%;object-fit:cover;object-position:center 18%;
+  transition:transform .8s cubic-bezier(.2,.8,.3,1),filter .5s ease;
+}
+.portrait-card:hover img{transform:scale(1.05);}
+.portrait-card::after{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(6,16,30,0.72) 0%, rgba(6,16,30,0.10) 42%, transparent 68%);
+  pointer-events:none;
+}
+html[data-theme="dark"] .portrait-card::after{
+  background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 42%, transparent 68%);
+}
+.portrait-meta{
+  position:absolute;left:20px;right:20px;bottom:20px;z-index:2;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  color:#fff;
+}
+.portrait-meta .name{font-size:.95rem;font-weight:700;letter-spacing:-0.01em;}
+.portrait-meta .role{font-size:.72rem;opacity:.78;letter-spacing:.08em;text-transform:uppercase;}
+.portrait-badge{
+  font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 12px;border-radius:999px;
+  background:rgba(255,255,255,0.16);
+  border:1px solid rgba(255,255,255,0.28);
+  backdrop-filter:blur(10px);
+  white-space:nowrap;
+}
+
+.hero-ring{
+  position:absolute;border-radius:50%;
+  border:1px dashed var(--border-2);
+  pointer-events:none;
+}
+.ring-1{width:112%;aspect-ratio:1;top:-6%;left:-6%;opacity:.55;animation:spin 46s linear infinite;}
+.ring-2{width:132%;aspect-ratio:1;top:-16%;left:-16%;opacity:.3;animation:spin 70s linear infinite reverse;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+.float-chip{
+  position:absolute;z-index:3;
+  padding:9px 15px;border-radius:999px;
+  background:var(--surface-3);
+  border:1px solid var(--border);
+  backdrop-filter:blur(16px);
+  font-size:.76rem;font-weight:600;color:var(--text-2);
+  box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:7px;
+}
+.float-chip svg{width:14px;height:14px;color:var(--accent);}
+.chip-a{top:8%;left:-6%;animation:float 6s ease-in-out infinite;}
+.chip-b{bottom:16%;right:-6%;animation:float 6s ease-in-out infinite 1.6s;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-11px);}}
+
+/* ============================================================
+   HIGHLIGHTS
+   ============================================================ */
+.highlights{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.hl-card{
+  padding:24px 22px;border-radius:var(--radius);
+  display:flex;flex-direction:column;gap:8px;
+}
+.hl-card:hover{transform:translateY(-5px);}
+.hl-icon{
+  width:40px;height:40px;border-radius:13px;
+  display:grid;place-items:center;
+  background:var(--accent-soft);color:var(--accent-text);
+  margin-bottom:6px;
+}
+.hl-icon svg{width:19px;height:19px;}
+.hl-value{font-size:1.62rem;font-weight:800;letter-spacing:-0.03em;}
+.hl-label{font-size:.8rem;color:var(--muted);font-weight:500;line-height:1.4;}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:34px;align-items:start;}
+.about-text p{color:var(--text-2);margin-bottom:16px;font-size:1rem;}
+.about-text p:last-child{margin-bottom:0;}
+.about-side{display:flex;flex-direction:column;gap:14px;}
+.info-row{
+  display:flex;align-items:center;gap:14px;
+  padding:16px 18px;border-radius:var(--radius-sm);
+}
+.info-row .ico{
+  width:36px;height:36px;border-radius:11px;flex-shrink:0;
+  display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-text);
+}
+.info-row .ico svg{width:17px;height:17px;}
+.info-row .k{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;font-weight:600;}
+.info-row .v{font-size:.9rem;font-weight:600;color:var(--text);}
+
+/* ============================================================
+   EXPERIENCE
+   ============================================================ */
+.timeline{position:relative;padding-left:34px;}
+.timeline::before{
+  content:"";position:absolute;left:9px;top:10px;bottom:10px;width:2px;
+  background:linear-gradient(to bottom,var(--accent-2),var(--accent),transparent);
+  opacity:.45;border-radius:2px;
+}
+.tl-item{position:relative;margin-bottom:20px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-item::before{
+  content:"";position:absolute;left:-30px;top:28px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--accent-2);
+  box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--border-2),0 0 16px var(--accent-2);
+}
+.tl-card{padding:24px 26px;border-radius:var(--radius);}
+.tl-card:hover{transform:translateX(4px);}
+.tl-top{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;justify-content:space-between;margin-bottom:5px;}
+.tl-role{font-size:1.06rem;font-weight:700;}
+.tl-date{
+  font-size:.76rem;font-weight:600;color:var(--accent-text);
+  background:var(--accent-soft);border:1px solid var(--border);
+  padding:4px 12px;border-radius:999px;white-space:nowrap;
+}
+.tl-org{font-size:.88rem;color:var(--muted);font-weight:500;margin-bottom:12px;}
+.tl-list li{
+  position:relative;padding-left:18px;margin-bottom:7px;
+  font-size:.9rem;color:var(--text-2);
+}
+.tl-list li:last-child{margin-bottom:0;}
+.tl-list li::before{
+  content:"";position:absolute;left:0;top:9px;
+  width:5px;height:5px;border-radius:50%;background:var(--accent);
+}
+
+/* ============================================================
+   PROJECTS
+   ============================================================ */
+.featured{
+  padding:32px;border-radius:var(--radius-lg);
+  margin-bottom:26px;
+}
+.featured:hover{transform:none;}
+.featured-grid{display:grid;grid-template-columns:1fr;gap:34px;}
+.featured-media{position:relative;}
+.featured-body{display:flex;flex-direction:column;}
+
+/* Project Action Buttons (featured + small cards) */
+.project-actions,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+.project-actions .btn,
+.actions .btn {
+  flex: 1 1 auto;
+  min-width: 140px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.project-actions .btn:hover,
+.actions .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* Complementary Colors for Buttons (applies to featured and small project cards) */
+.project-actions .btn[data-link*="Github"],
+.actions .btn[data-link*="Github"] { background: #24292e; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Github"]:hover,
+.actions .btn[data-link*="Github"]:hover { background: #1b1f23; }
+
+.project-actions .btn[data-link*="Docs"],
+.actions .btn[data-link*="Docs"] { background: #0369a1; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Docs"]:hover,
+.actions .btn[data-link*="Docs"]:hover { background: #025a8a; }
+
+.project-actions .btn[data-link*="Presentation"],
+.actions .btn[data-link*="Presentation"] { background: #b45309; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Presentation"]:hover,
+.actions .btn[data-link*="Presentation"]:hover { background: #9a4508; }
+
+.project-actions .btn[data-link*="Demo"],
+.actions .btn[data-link*="Demo"] { background: #7c3aed; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Demo"]:hover,
+.actions .btn[data-link*="Demo"]:hover { background: #6d28d9; }
+
+.project-actions .btn[data-link*="Overview"],
+.actions .btn[data-link*="Overview"] { background: #059669; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Overview"]:hover,
+.actions .btn[data-link*="Overview"]:hover { background: #047857; }
+
+/* Impact Video button styling (distinct pink/magenta) */
+.project-actions .btn[data-link*="ImpactVideo"],
+.actions .btn[data-link*="ImpactVideo"] { background: #db2777; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="ImpactVideo"]:hover,
+.actions .btn[data-link*="ImpactVideo"]:hover { background: #be185d; }
+
+/* SRS/SDD button styling */
+.project-actions .btn[data-link*="SRS"],
+.actions .btn[data-link*="SRS"] { background: #0891b2; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="SRS"]:hover,
+.actions .btn[data-link*="SRS"]:hover { background: #0e7490; }
+
+.project-actions .btn[data-link*="SDD"],
+.actions .btn[data-link*="SDD"] { background: #0891b2; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="SDD"]:hover,
+.actions .btn[data-link*="SDD"]:hover { background: #0e7490; }
+
+/* Simulation button styling */
+.project-actions .btn[data-link*="Simulation"],
+.actions .btn[data-link*="Simulation"] { background: #ea580c; color: #fff; border-color: transparent; }
+.project-actions .btn[data-link*="Simulation"]:hover,
+.actions .btn[data-link*="Simulation"]:hover { background: #c2410c; }
+
+/* View Certificate button styling */
+.project-actions .btn[data-link*="Certificate"],
+.actions .btn[data-link*="Certificate"],
+.btn-cert {
+  background: #059669; color: #fff; border-color: transparent;
+}
+.project-actions .btn[data-link*="Certificate"]:hover,
+.actions .btn[data-link*="Certificate"]:hover,
+.btn-cert:hover { background: #047857; }
+
+html[data-theme="dark"] .project-actions .btn[data-link*="Github"],
+html[data-theme="dark"] .actions .btn[data-link*="Github"] { background: #333; }
+html[data-theme="dark"] .project-actions .btn[data-link*="Github"]:hover,
+html[data-theme="dark"] .actions .btn[data-link*="Github"]:hover { background: #444; }
+
+.featured-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px;}
+.badge{
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 13px;border-radius:999px;
+  background:var(--accent-soft);color:var(--accent-text);
+  border:1px solid var(--border);
+}
+.badge.gold{
+  background:linear-gradient(135deg,rgba(250,204,21,.22),rgba(245,158,11,.16));
+  color:#b45309;border-color:rgba(245,158,11,.32);
+}
+html[data-theme="dark"] .badge.gold{color:#fcd34d;border-color:rgba(245,158,11,.35);}
+
+.featured-title{font-size:clamp(1.35rem,2.6vw,1.85rem);margin-bottom:8px;}
+.featured-sub{font-size:.86rem;color:var(--muted);margin-bottom:18px;font-weight:500;}
+.featured-desc{font-size:.94rem;color:var(--text-2);margin-bottom:20px;}
+
+.sub-head{
+  font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:10px;
+}
+.feature-list{margin-bottom:20px;}
+.feature-list li{
+  position:relative;padding-left:22px;margin-bottom:8px;
+  font-size:.885rem;color:var(--text-2);
+}
+.feature-list li::before{
+  content:"";position:absolute;left:0;top:7px;
+  width:12px;height:12px;border-radius:4px;
+  background:var(--accent-soft);
+  border:1px solid var(--accent);
+}
+.feature-list li strong{color:var(--text);font-weight:600;}
+
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin-bottom:20px;}
+.metric{
+  padding:14px 13px;border-radius:var(--radius-sm);
+  background:var(--surface-2);
+  border:1px solid var(--border-2);
+  text-align:center;
+  transition:transform .3s ease,border-color .3s ease,background .3s ease;
+}
+.metric:hover{transform:translateY(-3px);border-color:var(--ring);background:var(--surface-3);}
+.metric .num{font-size:1.16rem;font-weight:800;letter-spacing:-0.03em;color:var(--accent-text);}
+.metric .lbl{font-size:.68rem;color:var(--muted);font-weight:600;line-height:1.3;margin-top:3px;}
+
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:0;}
+
+/* Recognition / praise callout */
+.praise{
+  padding:18px 20px;border-radius:var(--radius-sm);
+  background:var(--accent-soft);
+  border:1px solid var(--accent);
+  margin-bottom:20px;
+}
+.praise p{font-size:.9rem;color:var(--text-2);}
+.praise p strong{color:var(--text);}
+.praise .praise-head{
+  font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent-text);margin-bottom:8px;
+  display:flex;align-items:center;gap:7px;
+}
+.praise .praise-head svg{width:15px;height:15px;flex-shrink:0;}
+
+/* Gallery */
+.gallery{
+  position:relative;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--surface-2);
+  border:1px solid var(--border-2);
+  aspect-ratio:16/10;
+  touch-action:pan-y;
+}
+.gallery-track{
+  display:flex;height:100%;
+  transition:transform .55s cubic-bezier(.2,.8,.3,1);
+  will-change:transform;
+}
+.gallery-slide{
+  position:relative;flex:0 0 100%;height:100%;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--surface-2),var(--surface-3));
+}
+.gallery-slide img{
+  width:100%;height:100%;object-fit:cover;cursor:zoom-in;
+}
+.gallery-slide.is-missing img{display:none;}
+.gallery-slide.is-missing::after{
+  content:"Add image to /images";
+  font-size:.78rem;color:var(--muted);font-weight:500;
+  padding:12px 18px;border:1px dashed var(--border-2);border-radius:12px;
+  text-align:center;
+}
+.gallery-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;
+  background:rgba(10,20,35,0.5);
+  border:1px solid rgba(255,255,255,0.22);
+  color:#fff;cursor:pointer;
+  backdrop-filter:blur(10px);
+  transition:background .25s ease,transform .25s ease,opacity .25s ease;
+  opacity:0;
+}
+.gallery:hover .gallery-nav,.gallery:focus-within .gallery-nav{opacity:1;}
+.gallery-nav:hover{background:rgba(10,20,35,0.78);transform:translateY(-50%) scale(1.07);}
+.gallery-nav.prev{left:12px;}
+.gallery-nav.next{right:12px;}
+.gallery-nav svg{width:17px;height:17px;}
+.gallery-dots{
+  position:absolute;bottom:12px;left:50%;transform:translateX(-50%);
+  display:flex;gap:6px;padding:7px 11px;border-radius:999px;
+  background:rgba(10,20,35,0.42);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.16);
+}
+.gallery-dots button{
+  width:7px;height:7px;border-radius:50%;border:none;padding:0;
+  background:rgba(255,255,255,0.42);cursor:pointer;
+  transition:background .25s ease,width .25s ease;
+}
+.gallery-dots button.active{background:#fff;width:20px;border-radius:999px;}
+.gallery-empty{
+  display:grid;place-items:center;height:100%;
+  color:var(--muted);font-size:.82rem;
+}
+
+/* Other projects grid */
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
+  gap:20px;
+}
+.p-card{
+  display:flex;flex-direction:column;
+  border-radius:var(--radius);
+  overflow:hidden;
+  padding:0;
+}
+.p-card:hover{transform:translateY(-6px);}
+.p-card .gallery{border-radius:0;border:none;border-bottom:1px solid var(--border-2);aspect-ratio:16/9;}
+.p-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1;}
+.p-title{font-size:1.02rem;font-weight:700;margin-bottom:5px;}
+.p-cat{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin-bottom:10px;}
+.p-desc{font-size:.855rem;color:var(--text-2);margin-bottom:14px;flex:1;}
+.p-metric{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:.75rem;font-weight:700;color:var(--accent-text);
+  background:var(--accent-soft);border:1px solid var(--border-2);
+  padding:5px 12px;border-radius:999px;
+  margin-bottom:14px;align-self:flex-start;
+}
+.p-metric svg{width:13px;height:13px;}
+
+/* ============================================================
+   RESEARCH
+   ============================================================ */
+.research-card{
+  padding:34px;border-radius:var(--radius-lg);
+  position:relative;overflow:hidden;
+}
+.research-card::before{
+  content:"";position:absolute;top:-60%;right:-12%;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 68%);
+  pointer-events:none;
+}
+.research-status{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 15px;border-radius:999px;
+  background:rgba(34,197,94,.14);color:#15803d;
+  border:1px solid rgba(34,197,94,.3);
+  margin-bottom:18px;
+}
+html[data-theme="dark"] .research-status{color:#86efac;border-color:rgba(34,197,94,.32);}
+.research-card h3{font-size:clamp(1.15rem,2.3vw,1.55rem);margin-bottom:10px;position:relative;}
+.research-venue{font-size:.88rem;color:var(--muted);margin-bottom:18px;position:relative;}
+.research-card p{color:var(--text-2);font-size:.94rem;position:relative;max-width:820px;}
+
+/* ============================================================
+   SKILLS
+   ============================================================ */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
+}
+.skill-card{padding:24px 24px 26px;border-radius:var(--radius);}
+.skill-card:hover{transform:translateY(-5px);}
+.skill-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.skill-head .ico{
+  width:38px;height:38px;border-radius:12px;flex-shrink:0;
+  display:grid;place-items:center;
+  background:var(--accent-soft);color:var(--accent-text);
+}
+.skill-head .ico svg{width:18px;height:18px;}
+.skill-head h3{font-size:.98rem;font-weight:700;}
+.skill-tags{display:flex;flex-wrap:wrap;gap:7px;}
+
+/* ============================================================
+   EDUCATION / CERTS / LANGUAGES
+   ============================================================ */
+.edu-card{
+  padding:30px;border-radius:var(--radius-lg);
+  display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;
+}
+.edu-mark{
+  width:62px;height:62px;border-radius:18px;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  color:#04121f;font-weight:800;font-size:1.05rem;
+  box-shadow:0 12px 30px -12px var(--accent);
+}
+.edu-card h3{font-size:1.18rem;margin-bottom:5px;}
+.edu-uni{font-size:.9rem;color:var(--muted);margin-bottom:12px;font-weight:500;}
+.edu-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.edu-cert{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:10px 18px;
+  border-radius:14px;
+  font-size:.85rem;font-weight:600;
+  background:#059669;color:#fff;border:1px solid transparent;
+  transition:transform .25s ease,box-shadow .3s ease,background .3s ease;
+  margin-bottom:18px;
+}
+.edu-cert:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:#047857;}
+.edu-cert svg{width:16px;height:16px;flex-shrink:0;}
+.coursework{margin-top:6px;}
+.coursework summary{
+  cursor:pointer;font-size:.8rem;font-weight:600;color:var(--accent-text);
+  padding:9px 0;list-style:none;display:flex;align-items:center;gap:8px;
+}
+.coursework summary::-webkit-details-marker{display:none;}
+.coursework summary::before{
+  content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(-45deg);transition:transform .25s ease;margin-left:2px;
+}
+.coursework[open] summary::before{transform:rotate(45deg);}
+.course-list{display:flex;flex-wrap:wrap;gap:7px;padding-top:8px;}
+
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px;}
+.mini-card{padding:20px 22px;border-radius:var(--radius);}
+.mini-card:hover{transform:translateY(-4px);}
+.mini-card h4{font-size:.92rem;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;}
+.mini-card h4 svg{width:16px;height:16px;color:var(--accent);flex-shrink:0;}
+.mini-card p{font-size:.82rem;color:var(--muted);margin-bottom:12px;}
+
+/* Certificate buttons in mini cards */
+.mini-card .btn-cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #059669;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: transform .25s ease, box-shadow .3s ease, background .3s ease;
+}
+.mini-card .btn-cert:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  background: #047857;
+}
+.mini-card .btn-cert svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.lang-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--border-2);
+}
+.lang-row:last-child{border-bottom:none;}
+.lang-name{font-size:.9rem;font-weight:600;}
+.lang-level{
+  font-size:.74rem;font-weight:600;color:var(--accent-text);
+  background:var(--accent-soft);border:1px solid var(--border-2);
+  padding:4px 13px;border-radius:999px;
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact-card{
+  padding:clamp(34px,5vw,60px);
+  border-radius:var(--radius-lg);
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.contact-card::before{
+  content:"";position:absolute;top:-50%;left:50%;transform:translateX(-50%);
+  width:760px;height:760px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 62%);
+  pointer-events:none;
+}
+.contact-card > *{position:relative;}
+.contact-card h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:14px;}
+.contact-card p{color:var(--text-2);max-width:620px;margin:0 auto 30px;font-size:.98rem;}
+
+/* --- New Contact Layout --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.contact-method:hover {
+  transform: translateY(-4px);
+  border-color: var(--ring);
+  background: var(--surface-3);
+  box-shadow: var(--shadow);
+}
+.contact-method .cm-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.contact-method .cm-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.contact-method .cm-text {
+  display: flex;
+  flex-direction: column;
+}
+.contact-method .cm-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.contact-method .cm-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  word-break: break-all;
+}
+
+/* Remove the old contact-actions block */
+.contact-actions{display:none;}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{
+  padding:36px 0 44px;
+  border-top:1px solid var(--border-2);
+  margin-top:40px;
+}
+.footer-inner{
+  display:flex;flex-wrap:wrap;gap:16px;
+  align-items:center;justify-content:space-between;
+  font-size:.82rem;color:var(--muted);
+}
+.footer-links{display:flex;gap:18px;}
+.footer-links a:hover{color:var(--accent-text);}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed;inset:0;z-index:1000;
+  background:rgba(5,10,20,0.82);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  display:grid;place-items:center;
+  padding:24px;
+  opacity:0;visibility:hidden;
+  transition:opacity .3s ease,visibility .3s ease;
+}
+.lightbox.open{opacity:1;visibility:visible;}
+.lightbox img{
+  max-width:min(1200px,94vw);
+  max-height:88vh;
+  border-radius:16px;
+  box-shadow:0 40px 100px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.14);
+  object-fit:contain;
+}
+.lightbox-close{
+  position:absolute;top:22px;right:22px;
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  color:#fff;cursor:pointer;
+  transition:background .25s ease,transform .25s ease;
+}
+.lightbox-close:hover{background:rgba(255,255,255,0.2);transform:rotate(90deg);}
+.lightbox-close svg{width:20px;height:20px;}
+
+/* ============================================================
+   5. RESPONSIVE STYLES
+   ============================================================ */
+@media (max-width:1080px){
+  .nav-links{display:none;}
+  .hamburger{display:grid;}
+  .hero-grid{grid-template-columns:1fr;gap:48px;}
+  .hero-visual{order:-1;}
+  .portrait-card{width:min(100%,340px);}
+  .about-grid{grid-template-columns:1fr;gap:26px;}
+  .featured-grid,.featured-grid.reverse{grid-template-columns:1fr;gap:26px;}
+  .featured-grid.reverse .featured-media{order:0;}
+  .highlights{grid-template-columns:repeat(2,1fr);}
+  .contact-grid { grid-template-columns: 1fr; max-width: 500px; }
+}
+
+@media (max-width:720px){
+  .section{padding:70px 0;}
+  .wrap{padding:0 18px;}
+  .nav{top:10px;padding:0 12px;}
+  .nav-inner{height:62px;padding:0 10px 0 16px;}
+  .brand span{display:none;}
+  .nav-actions .btn-cv{display:none;}
+  .hero{padding-top:calc(var(--nav-h) + 48px);}
+  .featured{padding:22px 20px;}
+  .research-card{padding:24px 22px;}
+  .edu-card{grid-template-columns:1fr;gap:18px;padding:24px 22px;}
+  .float-chip{display:none;}
+  .gallery-nav{opacity:1;}
+  .gallery{aspect-ratio:4/3;}
+  .metrics{grid-template-columns:repeat(2,1fr);}
+  .footer-inner{justify-content:center;text-align:center;}
+  .project-actions .btn,
+  .actions .btn { flex: 1 1 100%; }
+}
+
+@media (max-width:480px){
+  .highlights{grid-template-columns:1fr;}
+  .projects-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:clamp(1.9rem,9vw,2.5rem);}
+  .hero-btns .btn{flex:1;justify-content:center;}
+  .tl-card{padding:20px 18px;}
+  .timeline{padding-left:26px;}
+  .tl-item::before{left:-24px;}
+  .gallery{aspect-ratio:1/1;}
+  .gallery-dots{bottom:9px;}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  .gallery-track{transition:none;}
+}
+
+/* Entrance animation */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1);}
+.reveal.visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Sondos Mohamed — home">
+      <span class="brand-mark" aria-hidden="true">SM</span>
+      <span>Sondos Mohamed</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm btn-cv" data-link="cv" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        View CV
+      </a>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-panel">
+    <button class="icon-btn mobile-close" id="mobileClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-primary" data-link="cv" href="#">View CV</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-tag"><span class="pulse" aria-hidden="true"></span> Available for opportunities</div>
+        <h1>
+          SONDOS<br />
+          <span class="grad">MOHAMED</span>
+        </h1>
+        <div class="hero-role">AI &amp; Software Engineer</div>
+        <p class="hero-desc">
+          Top 10 Honors Computer Science graduate specializing in Artificial Intelligence.
+          I build complete, end-to-end intelligent systems — LLM applications, RAG pipelines,
+          machine learning models, and the full-stack software around them.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18v13H3z"/><path d="M8 7V4h8v3"/></svg>
+            View Projects
+          </a>
+          <a class="btn" data-link="cv" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+            View CV
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a data-link="linkedin" href="#" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.57-2.33 3.2V21H9z"/></svg>
+          </a>
+          <a data-link="github" href="#" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a data-link="email" href="#" aria-label="Send email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-ring ring-1" aria-hidden="true"></div>
+        <div class="hero-ring ring-2" aria-hidden="true"></div>
+
+        <div class="float-chip chip-a">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+          LLMs &amp; RAG
+        </div>
+        <div class="float-chip chip-b">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg>
+          Machine Learning
+        </div>
+
+        <div class="portrait-card">
+          <img src="images/profile.png" alt="Portrait of Sondos Mohamed" width="400" height="500" />
+          <div class="portrait-meta">
+            <div>
+              <div class="name">Sondos Mohamed</div>
+              <div class="role">AI &amp; Software Engineer</div>
+            </div>
+            <span class="portrait-badge">Top 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUICK HIGHLIGHTS
+     ============================================================ -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="highlights reveal">
+      <article class="hl-card glass">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+        <div class="hl-value">Top 10</div>
+        <div class="hl-label">Computer Science graduate, Misr International University</div>
+      </article>
+
+      <article class="hl-card glass">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.2L12 16.5 6.4 19.5l1.1-6.2L3 8.9 9 8z"/></svg></div>
+        <div class="hl-value">3.58 / 4.0</div>
+        <div class="hl-label">Cumulative GPA — Excellent with Honors</div>
+      </article>
+
+      <article class="hl-card glass">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div>
+        <div class="hl-value">AI</div>
+        <div class="hl-label">Specialization in Artificial Intelligence</div>
+      </article>
+
+      <article class="hl-card glass">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13.5"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M9 7h6"/></svg></div>
+        <div class="hl-value">Accepted</div>
+        <div class="hl-label">MIUCC 2026 research publication</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> About</span>
+      <h2 class="section-title">Building intelligent systems end to end</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a Computer Science graduate from Misr International University, ranked among the Top 10 students
+          of my class with a specialization in Artificial Intelligence and an Excellent with Honors degree.
+          My focus sits at the intersection of AI and software engineering — not just training models, but
+          designing the systems that make them useful.
+        </p>
+        <p>
+          I've built conversational LLM applications, retrieval-augmented generation pipelines over vector          databases, machine learning models for prediction and classification, and full-stack platforms with
+          REST APIs, databases, and multilingual voice interaction. I care about the whole path: architecture,
+          implementation, evaluation, automated testing, and integration — and about results that can be
+          measured, not just demonstrated.
+        </p>
+      </div>
+
+      <div class="about-side reveal">
+        <div class="info-row glass">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="k">Location</div><div class="v">Cairo, Egypt</div></div>
+        </div>
+        <div class="info-row glass">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div><div class="k">Degree</div><div class="v">BSc Computer Science — AI</div></div>
+        </div>
+        <div class="info-row glass">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+          <div><div class="k">Email</div><div class="v">sondosgafar@gmail.com</div></div>
+        </div>
+        <div class="info-row glass">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+          <div><div class="k">Languages</div><div class="v">Arabic (Native) · English (Fluent) · French (Basic)</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Experience, Training & Activities</span>
+      <h2 class="section-title">Where I've worked and learned</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div class="tl-role">Participant &amp; AI Developer</div>
+            <div class="tl-date">Google for Developers &amp; ITI</div>
+          </div>
+          <div class="tl-org">Build with AI: Masr Edition</div>
+          <ul class="tl-list">
+            <li>Developed functional Generative AI prototypes ,including a YouTube video summarizer and an interactive AI assistant with a customized conversational persona and animated avatar, using Google AI (Gemini) APIs and prompt engineering.</li>
+            <li>Configured and worked with Google Cloud Platform (GCP) environments, including service accounts, API keys, IAM, Compute Engine, Cloud SQL, and serverless deployment concepts for developing and testing AI prototypes.</li>
+            <li>Explored agentic AI interfaces and end-to-end AI application design, covering AI prototyping, evaluation, and deployment considerations.</li>
+          </ul>
+          <div class="actions" style="margin-top:16px;">
+            <a class="btn btn-sm btn-cert" data-link="buildWithAICertificate" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+              View Certificate
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div class="tl-role">Information Technology Intern</div>
+            <div class="tl-date">Jul 2024 · Agouza, Giza</div>
+          </div>
+          <div class="tl-org">Income for Infrastructure &amp; Investment — IGI Group</div>
+          <ul class="tl-list">
+            <li>Administered and troubleshot enterprise Windows and macOS workstations, resolving hardware and software issues across the corporate environment.</li>
+            <li>Supported configuration and maintenance of servers, switches, firewalls, endpoint devices, antivirus software, and endpoint protection.</li>
+            <li>Diagnosed technical issues and documented solutions, communicating effectively with both technical and non-technical users.</li>
+          </ul>
+          <div class="actions" style="margin-top:16px;">
+            <a class="btn btn-sm btn-cert" data-link="internshipCertificate" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+              View Internship Certificate
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div class="tl-role">Information Technology Member</div>
+            <div class="tl-date">Oct 2023 – Sep 2024 · MIU</div>
+          </div>
+          <div class="tl-org">Gamers Legacy Club</div>
+          <ul class="tl-list">
+            <li>Attended weekly club sessions focused on advancing core computer science concepts and technical skill development.</li>
+            <li>Completed practical workshops in full-stack development, learning both front-end and back-end web technologies.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Projects</span>
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">
+        Two flagship systems — an AI-powered property consultant and an assistive Arabic sign language
+        translation platform — followed by additional AI, full-stack, and security projects.
+      </p>
+    </div>
+
+    <!-- ============ FEATURED #1 — DELLENY ============ -->
+    <article class="featured glass reveal">
+      <div class="featured-grid">
+        <div class="featured-media">
+          <div class="gallery" data-gallery="delleny" data-alt="Delleny platform screenshot"></div>
+          <!-- Action Buttons for Delleny -->
+          <div class="project-actions">
+            <a class="btn" data-link="dellenyGithub" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="btn" data-link="dellenyDocs" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+              Documentation
+            </a>
+            <a class="btn" data-link="dellenyPresentation" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v12H3z"/><path d="M12 15v6M8 21h8"/></svg>
+              Presentation
+            </a>
+            <a class="btn" data-link="dellenyDemo" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>
+              Full Feature Demo
+            </a>
+            <a class="btn" data-link="dellenyOverview" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Project Overview
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-body">
+          <div class="featured-head">
+            <span class="badge gold">Graduation Project</span>
+            <span class="badge">Featured</span>
+          </div>
+          <h3 class="featured-title">Delleny — AI-Powered Property Consultant</h3>
+          <div class="featured-sub">Python · FastAPI · Next.js · MongoDB · ChromaDB · LLMs · RAG · STT/TTS</div>
+
+          <p class="featured-desc">
+            An end-to-end, voice-first Arabic property consultant that reasons about lifestyle and intent
+            instead of static filters. It combines conversational LLMs, retrieval-augmented generation over
+            vector databases, machine learning prediction, and multilingual voice interaction in a single
+            production-style platform serving buyers, sellers, and admins.
+          </p>
+
+          <div class="sub-head">Key capabilities</div>
+          <ul class="feature-list">
+            <li><strong>RAG consultant</strong> — vector retrieval over embedded listings with constraint parsing and re-ranking, returning grounded, source-attributed answers.</li>
+            <li><strong>Multilingual voice assistant</strong> — Faster-Whisper speech-to-text and Edge TTS / XTTS-v2 synthesis across English, Formal Arabic, and Egyptian Arabic.</li>
+            <li><strong>Lifestyle matching</strong> — Random Forest classification of user lifestyle category from demographics and preferences.</li>
+            <li><strong>Price fairness &amp; ROI</strong> — XGBoost regression estimating fair market value, plus an AI negotiation assistant generating offer ranges and strategy.</li>
+            <li><strong>Seller tooling</strong> — AI listing optimization, price recommendation, demand scoring, and buyer demand insights.</li>
+            <li><strong>Trust &amp; moderation</strong> — fraud detection pipeline, photo quality analysis with Gemini Vision, admin moderation, and analytics dashboard.</li>
+          </ul>
+
+          <div class="sub-head">Evaluation results</div>
+          <div class="metrics">
+            <div class="metric"><div class="num">99.5%</div><div class="lbl">Commercial Hit Rate@5</div></div>
+            <div class="metric"><div class="num">0.90</div><div class="lbl">Residential MRR@5</div></div>
+            <div class="metric"><div class="num">99.0%</div><div class="lbl">Lifestyle classification accuracy</div></div>
+            <div class="metric"><div class="num">R² 0.993</div><div class="lbl">Price prediction (XGBoost)</div></div>
+            <div class="metric"><div class="num">23</div><div class="lbl">Automated backend tests (PyTest)</div></div>
+            <div class="metric"><div class="num">87.2%</div><div class="lbl">URL Analyzer Recall@5</div></div>
+          </div>
+
+          <div class="praise">
+            <div class="praise-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+              Instructor Recognition
+            </div>
+            <p>
+              Praised for its exceptional breadth of features and depth of AI integration. An external AUC
+              instructor remarked that the scope and sophistication of this project <strong>exceeded that of a
+              typical graduation project</strong>. A separate external technical instructor commended both the
+              commercial viability of the idea — noting its services could realistically be brought to market —
+              and the impressively wide range of AI techniques consolidated into a single, cohesive system.
+            </p>
+          </div>
+
+          <div class="tags">
+            <span class="pill accent">RAG</span>
+            <span class="pill">ChromaDB</span>
+            <span class="pill">Gemini AI</span>
+            <span class="pill">Ollama</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">Random Forest</span>
+            <span class="pill">Faster-Whisper</span>
+            <span class="pill">Edge TTS</span>
+            <span class="pill">Playwright</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ FEATURED #2 — DUAL-GLOVE ============ -->
+    <article class="featured glass reveal">
+      <div class="featured-grid reverse">
+        <div class="featured-media">
+          <div class="gallery" data-gallery="dualglove" data-alt="Dual-Glove system photo"></div>
+          <!-- Action Buttons for Dual-Glove -->
+          <div class="project-actions">
+            <a class="btn" data-link="dualGloveGithub" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="btn" data-link="dualGloveDocs" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+              Documentation
+            </a>
+            <a class="btn" data-link="dualGlovePresentation" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v12H3z"/><path d="M12 15v6M8 21h8"/></svg>
+              Presentation
+            </a>
+            <a class="btn" data-link="dualGloveDemo" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>
+              Demo
+            </a>
+            <a class="btn" data-link="dualGloveImpactVideo" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m23 7-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              Impact Video
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-body">
+          <div class="featured-head">
+            <span class="badge gold">Top Project</span>
+            <span class="badge">Accepted Research — MIUCC 2026</span>
+          </div>
+          <h3 class="featured-title">Dual-Glove Intelligent Agent for Arabic Sign Language</h3>
+          <div class="featured-sub">ESP32 · Flex Sensors · IMU · Python · C++ · Machine Learning · Edge TTS</div>
+
+          <p class="featured-desc">
+            A real-time assistive communication system that translates Arabic sign language into text and
+            speech. Two instrumented gloves capture finger bending and hand motion, stream synchronized
+            sensor data wirelessly to a host machine, and a trained classifier maps the gesture to an Arabic
+            word that is spoken aloud — closing the communication gap between deaf and hearing speakers.
+          </p>
+
+          <div class="sub-head">System highlights</div>
+          <ul class="feature-list">
+            <li><strong>Dual-glove architecture</strong> — two ESP32 microcontrollers, five flex sensors per glove, and MPU6050 IMU sensors for motion and rotation tracking.</li>
+            <li><strong>Signal acquisition</strong> — Python and C++ components handling sensor-data acquisition, synchronization, wireless communication, and real-time monitoring.</li>
+            <li><strong>Gesture classification</strong> — benchmarked multiple ML models, with gradient boosting delivering the strongest results for words and for letters/numbers.</li>
+            <li><strong>Voice output</strong> — Microsoft Edge TTS with Egyptian Arabic pronunciation tuning, selected over XTTS and Chatterbox for lower latency and more natural Egyptian speech.</li>
+            <li><strong>End-to-end integration</strong> — hardware, embedded software, machine learning, and speech synthesis combined into one working system.</li>
+          </ul>
+
+          <div class="sub-head">Evaluation results</div>
+          <div class="metrics">
+            <div class="metric"><div class="num">97.95%</div><div class="lbl">Two-hand gesture accuracy (XGBoost)</div></div>
+            <div class="metric"><div class="num">96.41%</div><div class="lbl">Letters &amp; numbers accuracy (Gradient Boosting)</div></div>
+            <div class="metric"><div class="num">88.04%</div><div class="lbl">MLPClassifier baseline</div></div>
+            <div class="metric"><div class="num">87.73%</div><div class="lbl">Random Forest baseline</div></div>
+          </div>
+
+          <div class="praise">
+            <div class="praise-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+              Instructor Recognition
+            </div>
+            <p>
+              Instructors were captivated by this project — it earned an <strong>applause</strong> during
+              presentation and was widely recognized as the <strong>best project in the course</strong>.
+              Faculty noted that it far surpassed the standard of ordinary coursework, stating it deserved
+              recognition at the level of an <strong>innovative graduation project</strong> and had the
+              potential to serve as the foundation for something remarkable, such as a <strong>startup</strong>.
+            </p>
+          </div>
+
+          <div class="tags">
+            <span class="pill accent">Embedded Systems</span>
+            <span class="pill">ESP32</span>
+            <span class="pill">Flex Sensors</span>
+            <span class="pill">MPU6050 IMU</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">Gradient Boosting</span>
+            <span class="pill">Edge TTS</span>
+            <span class="pill">Python</span>
+            <span class="pill">C++</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ OTHER PROJECTS ============ -->
+    <h3 class="sub-head" style="font-size:.78rem;margin:44px 0 18px;">Additional projects</h3>
+    <div class="projects-grid" id="projectsGrid"><!-- built by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESEARCH
+     ============================================================ -->
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Research</span>
+      <h2 class="section-title">Published research</h2>
+    </div>
+
+    <article class="research-card glass reveal">
+      <div class="research-status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        Presented
+      </div>
+      <h3>Dual-Glove Intelligent Agent for Arabic Sign Language Recognition and Speech Translation</h3>
+      <div class="research-venue">
+        6th International Mobile, Intelligent, and Ubiquitous Computing Conference (MIUCC 2026) · 2026
+      </div>
+      <p>
+        This work presents a wearable dual-glove intelligent agent that recognizes Arabic sign language
+        gestures in real time and converts them into spoken Arabic output. Flex sensors capture finger
+        articulation while IMU sensors track hand motion; the synchronized sensor stream is transmitted
+        wirelessly via ESP32 microcontrollers and classified by machine learning models trained on a
+        labeled gesture dataset. The system achieves 97.95% accuracy for two-hand gesture recognition and
+        96.41% for letters and numbers, with a text-to-speech layer tuned for natural Egyptian Arabic
+        pronunciation.
+      </p>
+
+      <div class="actions" style="margin-top:24px;">
+        <a class="btn btn-sm" data-link="researchPaper" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          Paper
+        </a>
+        <a class="btn btn-sm" data-link="researchPresentation" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v12H3z"/><path d="M12 15v6M8 21h8"/></svg>
+          Presentation
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Skills</span>
+      <h2 class="section-title">Technologies I work with</h2>
+      <p class="section-sub">Grouped by discipline — from AI models and pipelines to the software and infrastructure around them.</p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z"/></svg></div>
+          <h3>AI &amp; Data</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">Large Language Models</span>
+          <span class="pill">Retrieval-Augmented Generation</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">Deep Learning</span>
+          <span class="pill">NLP</span>
+          <span class="pill">Recommendation Systems</span>
+          <span class="pill">Speech-to-Text</span>
+          <span class="pill">Text-to-Speech</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">TensorFlow</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">OpenAI</span>
+          <span class="pill">Gemini AI</span>
+          <span class="pill">Ollama</span>
+          <span class="pill">ChromaDB</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">Python</span>
+          <span class="pill">C++</span>
+          <span class="pill">C#</span>
+          <span class="pill">Java</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Dart</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Software &amp; Web Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">FastAPI</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">PHP</span>
+          <span class="pill">OOP</span>
+          <!--span class="pill">SOLID Principles</span-->
+          <span class="pill">Design Patterns</span>
+          <span class="pill">Data Structures &amp; Algorithms</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+          <h3>Databases</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">MongoDB</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">Firebase</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">ChromaDB</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Testing &amp; Development Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">PyTest</span>
+          <span class="pill">Playwright</span>
+          <span class="pill">Automated Testing</span>
+          <span class="pill">End-to-End Testing</span>
+          <span class="pill">Git</span>
+          <span class="pill">GitHub</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Jira</span>
+          <span class="pill">Visual Studio</span>
+          <span class="pill">Linux</span>
+          <span class="pill">Windows</span>
+          <span class="pill">macOS</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Cybersecurity &amp; Networking</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">Network Security</span>
+          <span class="pill">AAA / RADIUS</span>
+          <span class="pill">SSH Remote Access</span>
+          <span class="pill">Cisco ASA Firewalls</span>
+          <span class="pill">FortiGate</span>
+          <span class="pill">ACLs</span>
+          <span class="pill">IPsec VPN</span>
+          <span class="pill">VLAN Segmentation</span>
+          <span class="pill">Inter-VLAN Routing</span>
+          <span class="pill">OSPF</span>
+          <span class="pill">Syslog Monitoring</span>
+          <span class="pill">JWT Authentication</span>
+          <span class="pill">RBAC</span>
+          <span class="pill">Cisco Packet Tracer</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+          <h3>Cloud</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">Google Cloud Platform</span>
+          <span class="pill">Service Accounts</span>
+          <span class="pill">API Keys</span>
+          <span class="pill">Serverless Environments</span>
+        </div>
+      </article>
+
+      <article class="skill-card glass reveal">
+        <div class="skill-head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13.5"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></div>
+          <h3>Documentation &amp; Research</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="pill">Technical Research</span>
+          <span class="pill">Model Evaluation &amp; Benchmarking</span>
+          <span class="pill">Research Paper Writing</span>
+          <span class="pill">SRS</span>
+          <span class="pill">SDD</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION / CERTIFICATIONS / LANGUAGES
+     ============================================================ -->
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Education</span>
+      <h2 class="section-title">Academic background</h2>
+    </div>
+
+    <article class="edu-card glass reveal">
+      <div class="edu-mark">MIU</div>
+      <div>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <div class="edu-uni">Misr International University · 2022 – Jul 2026 · Cairo, Egypt</div>
+
+        <div class="edu-badges">
+          <span class="badge">GPA 3.58 / 4.0</span>
+          <span class="badge gold">Excellent with Honors</span>
+          <span class="badge">Top 10 Students</span>
+          <span class="badge">AI Specialization</span>
+        </div>
+
+        <a class="edu-cert" data-link="graduationCertificate" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+          View Graduation Certificate
+        </a>
+
+        <details class="coursework">
+          <summary>Relevant coursework</summary>
+          <div class="course-list">
+            <span class="pill">Advanced Artificial Intelligence</span>
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Natural Language Processing</span>
+            <span class="pill">Designing Intelligent Agents</span>
+            <span class="pill">Foundation of Data Science</span>
+            <span class="pill">Image Processing</span>
+            <span class="pill">Software Engineering</span>
+            <span class="pill">Object-Oriented Programming</span>
+            <span class="pill">Data Structures &amp; Algorithms</span>
+            <span class="pill">Database Management Systems</span>
+            <span class="pill">Operating Systems</span>
+            <span class="pill">Distributed Systems</span>
+            <span class="pill">Computer Networks</span>
+            <span class="pill">Network Security</span>
+            <span class="pill">Probability &amp; Statistics</span>
+            <span class="pill">Statistical Analysis</span>
+            <span class="pill">Discrete Mathematics &amp; Linear Algebra</span>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <h3 class="sub-head" style="font-size:.78rem;margin:44px 0 16px;">Certifications</h3>
+    <div class="mini-grid">
+      <article class="mini-card glass reveal">
+        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg> Build with AI: Masr Edition</h4>
+        <p>Certificate of Completion — Google for Developers &amp; Information Technology Institute (ITI)</p>
+        <a class="btn-cert" data-link="buildWithAICertificate" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+          View Certificate
+        </a>
+      </article>
+      <article class="mini-card glass reveal">
+        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Network Security</h4>
+        <p>Certificate of Completion — Cisco Networking Academy</p>
+        <a class="btn-cert" data-link="networkSecurityCertificate" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+          View Certificate
+        </a>
+      </article>
+      <article class="mini-card glass reveal">
+        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z"/></svg> AI Fundamentals with Capstone Project</h4>
+        <p>Certificate of Completion — IBM SkillsBuild</p>
+        <a class="btn-cert" data-link="aiFundamentalsCertificate" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+          View Certificate
+        </a>
+      </article>
+    </div>
+
+    <h3 class="sub-head" style="font-size:.78rem;margin:44px 0 16px;">Languages</h3>
+    <article class="mini-card glass reveal" style="padding:20px 24px;">
+      <div class="lang-row"><span class="lang-name">Arabic</span><span class="lang-level">Native</span></div>
+      <div class="lang-row"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+      <div class="lang-row"><span class="lang-name">French</span><span class="lang-level">Basic</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-card glass reveal">
+      <h2>LET'S CONNECT</h2>
+      <p>
+        I'm open to opportunities in Artificial Intelligence, Machine Learning, and Software Engineering —
+        especially roles building complete intelligent systems from model to production.
+      </p>
+
+      <!-- New Contact Grid -->
+      <div class="contact-grid">
+        <a href="mailto:sondosgafar@gmail.com" class="contact-method" style="grid-column: 1 / -1;">
+          <div class="cm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </div>
+          <div class="cm-text">
+            <span class="cm-label">Email</span>
+            <span class="cm-value">sondosgafar@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sondos-mohamed-mohamed-abd-elmoniem-gafar-4923412b8/" target="_blank" rel="noopener noreferrer" class="contact-method">
+          <div class="cm-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.57-2.33 3.2V21H9z"/></svg>
+          </div>
+          <div class="cm-text">
+            <span class="cm-label">LinkedIn</span>
+            <span class="cm-value">Connect with me</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sondosgafar" target="_blank" rel="noopener noreferrer" class="contact-method">
+          <div class="cm-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </div>
+          <div class="cm-text">
+            <span class="cm-label">GitHub</span>
+            <span class="cm-value">View my code</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© <span id="year"></span> Sondos Mohamed. All rights reserved.</div>
+    <div class="footer-links">
+      <a data-link="linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a data-link="github" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a data-link="email" href="#">Email</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<script>
+/* ============================================================
+   1. CONFIGURATION — REPLACE ALL "_URL_HERE" PLACEHOLDERS
+   ------------------------------------------------------------
+   Search this file for "_URL_HERE" to find every link.
+   Leave a value as "_URL_HERE" or "#" to automatically HIDE
+   the corresponding button.
+   ============================================================ */
+const CONFIG = {
+
+  /* ---- Profile links ---- */
+  linkedin:            "https://www.linkedin.com/in/sondos-mohamed-mohamed-abd-elmoniem-gafar-4923412b8/",
+  github:              "https://github.com/sondosgafar",
+  email:               "sondosgafar@gmail.com",
+  cv:                  "https://drive.google.com/file/d/1pHURsGSP8QMUWLcPbqTq5vijRJSuZJHh/view?usp=sharing",
+  graduationCertificate: "https://drive.google.com/file/d/1OpIjBahp3r5eHPX9lfI93XZhO9DPGqwb/view?usp=sharing",
+  internshipCertificate: "https://drive.google.com/file/d/1BRe80QBxKDRfemHK3HU0NMsuPJ3YVEkL/view?usp=sharing",
+  buildWithAICertificate: "https://drive.google.com/file/d/13HsqGze7LJO8H1kmN_4HrCmyEuRzMkpO/view?usp=sharing",
+  networkSecurityCertificate: "https://drive.google.com/file/d/1AFl06N60VEcbGz57au9fQH-rZUvhcbpx/view?usp=sharing",
+  aiFundamentalsCertificate: "https://drive.google.com/file/d/1GhPrxP22m8Tn2MkxpCkh0N2XA4ielTCW/view?usp=sharing",
+
+  /* ---- Delleny ---- */
+  dellenyGithub:       "DELLENY_GITHUB_URL_HERE",
+  dellenyDocs:         "DELLENY_DOCUMENTATION_URL_HERE",
+  dellenyPresentation: "https://drive.google.com/file/d/1b3sAet4OC3XkuN1hFOOXrZK8tbCQU1Ac/view?usp=sharing",
+  dellenyDemo:         "https://drive.google.com/file/d/1DTEZ6jJf8kpq_7YVtNMChCoJF-wntZiR/view?usp=drive_link",
+  dellenyOverview:     "https://drive.google.com/file/d/1rrRSuAmfsCmcKUZBhWsOUdOwKsUcb5k-/view?usp=drive_link",
+
+  /* ---- Dual-Glove ---- */
+  dualGloveGithub:       "https://github.com/Mariam-Elbishbeashy/Dual-Glove-Intelligent-Agent-Arabic-Sign-Language",
+  dualGloveDocs:         "https://drive.google.com/file/d/1sY92lIZx40KSBBc4gOSP3kv0nCHreMEx/view?usp=sharing",
+  dualGlovePresentation: "https://drive.google.com/file/d/12dw5CtV9lg_aDNsu84iv7gESUqCc1TtU/view?usp=sharing",
+  dualGloveDemo:         "https://drive.google.com/file/d/1VkgaVpANFEJibVsiaiOLouhvn0PZEhEV/view?usp=sharing",
+  dualGloveImpactVideo:  "https://drive.google.com/file/d/1NC0DTIRAqzQjRN5pqA-0yrW1OLvOFLJm/view?usp=sharing",
+
+  /* ---- Research ---- */
+  researchPaper:        "https://drive.google.com/file/d/1EF3EUy2cqX8zB7Uqj-TWzcTRlwC2XVls/view?usp=drive_link",
+  researchPresentation: "RESEARCH_PRESENTATION_URL_HERE",
+
+  /* ---- Other projects ---- */
+  sentimentGithub:       "https://github.com/SondosGafar/Movie-Reviews-Sentiment-Analysis-NLP",
+  sentimentDocs:         "https://drive.google.com/file/d/1WBbqOpEosp3noi7r4vmA5D1f8dLAYvN7/view?usp=sharing",
+  sentimentPresentation: "SENTIMENT_PRESENTATION_URL_HERE",
+
+  flowerGithub:       "https://github.com/SondosGafar/Flower-Recognition",
+  flowerDocs:         "https://docs.google.com/document/d/1cEKCCqn0Eh9L4xdg7ZX3piagTscuYtJa/edit?usp=sharing&ouid=114122964490927250907&rtpof=true&sd=true",
+  flowerPresentation: "https://docs.google.com/presentation/d/1WMtfiL4LZ_5TXHIeSs-A-7_5vxYSD8Ok/edit?usp=sharing&ouid=114122964490927250907&rtpof=true&sd=true",
+
+  chatbotGithub:       "https://github.com/Mariam-Elbishbeashy/Language-Learning-Chatbot-Project",
+  chatbotSRS:          "https://drive.google.com/file/d/1Ad7buK7AXgBwuFblmvKq8koPVs3I5H9u/view?usp=sharing",
+  chatbotSDD:          "https://drive.google.com/file/d/1oaKHjuBoT4rkis0T-JBY_Fnp2R0lxCyf/view?usp=sharing",
+  chatbotPresentation: "CHATBOT_PRESENTATION_URL_HERE",
+
+  habitGithub:       "https://github.com/Mariam-Elbishbeashy/HabitHarbor-Final-Project",
+  habitDocs:         "HABIT_DOCUMENTATION_URL_HERE",
+  habitPresentation: "HABIT_PRESENTATION_URL_HERE",
+
+  culinaryGithub:       "https://github.com/Mariam-Elbishbeashy/Culinary-Coach-AI-Powered-Kitchen-Assistant-application",
+  culinaryDocs:         "CULINARY_DOCUMENTATION_URL_HERE",
+  culinaryPresentation: "https://drive.google.com/file/d/1oy4bD4WgZr3kXZoBjrvlHWijPx9bLJsQ/view?usp=sharing",
+
+  networkGithub:       "https://github.com/SondosGafar/Secure-Enterprise-Network-VPN-ZPF",
+  networkDocs:         "https://drive.google.com/file/d/1ShdJthIuYWV5r48DBeZxGvSdDBKm0X-E/view?usp=sharing",
+  networkPresentation: "NETWORK_PRESENTATION_URL_HERE",
+
+  foodGithub:       "https://github.com/SondosGafar/Egyptian-Food-Recommendation-System",
+  foodDocs:         "https://drive.google.com/file/d/1yEWgup5Hye7LXy6cFDORY3FCka5fVEgd/view?usp=sharing",
+  foodPresentation: "https://drive.google.com/file/d/1YPtG52dfKWiPksE6IcGkWdAN7GlzbBYu/view?usp=sharing",
+
+  creditGithub:       "https://github.com/Mariam-Elbishbeashy/Credit_Card_Approval_Prediction_ML",
+  creditDocs:         "https://drive.google.com/file/d/11FJA9shP8MZ-yvG88EPcSCW-yI8ASzIv/view?usp=drive_link",
+  creditPresentation: "CREDIT_PRESENTATION_URL_HERE",
+
+  /* ---- LDR-Based Automatic Lighting System ---- */
+  ldrGithub:       "LDR_GITHUB_URL_HERE",
+  ldrDocs:         "https://drive.google.com/file/d/1M2G0R-D6-RB-GL99F_6ekm2YLAK3yJ2W/view?usp=sharing",
+  ldrPresentation: "https://drive.google.com/file/d/19H7_0ZQ3yIFDFgNiH5YMVBOMVDsWdX-a/view?usp=sharing",
+  ldrDemo:         "https://drive.google.com/file/d/1CSUSTvaiyQwpUqJx-d9iRTF0WUoRVDSU/view?usp=drivesdk",
+  ldrSimulation:   "https://drive.google.com/file/d/1BOVNSe3vAfS9V6ee8MeIifGARtWz8LjJ/view?usp=sharing",
+
+  skyboundGithub:       "SKYBOUND_GITHUB_URL_HERE",
+  skyboundDocs:         "https://drive.google.com/file/d/1qnfAzmd_zm2aNRB40be3PmILXYqHR6Ch/view?usp=sharing",
+  skyboundPresentation: "https://drive.google.com/file/d/1C1hnlztMw0-lp-pLIvT16x6m99de51rL/view?usp=sharing"
+};
+
+/* ============================================================
+   7. GALLERY DATA — EDIT IMAGE FILENAMES HERE
+   ------------------------------------------------------------
+   Each array can hold ANY number of images (1, 2, 3, ...).
+   Navigation arrows and dots appear automatically when > 1.
+   Expected files live inside /images
+   ============================================================ */
+const GALLERIES = {
+
+  /* Featured — Delleny */
+  delleny: [
+    "images/delleny-1.png",
+    "images/delleny-2.png",
+    "images/delleny-3.png",
+    "images/delleny-4.png",
+    "images/delleny-5.png",
+    "images/delleny-6.png",
+    "images/delleny-7.png",
+    "images/delleny-8.png",
+    "images/delleny-9.png"
+  ],
+
+  /* Featured — Dual-Glove */
+  dualglove: [
+    "images/dual-glove-1.png",
+    "images/dual-glove-2.jpg",
+    "images/dual-glove-3.jpg"
+  ],
+
+  /* Other projects */
+  sentiment: ["images/sentiment-1.png", "images/sentiment-2.png"],
+  flower:    ["images/flower-1.png", "images/flower-2.png"],
+  chatbot:   ["images/chatbot-1.png", "images/chatbot-2.jpg"],
+  habit:     ["images/habit-1.jpg", "images/habit-2.jpg"],
+  culinary:  ["images/culinary-1.jpg", "images/culinary-2.jpg", "images/culinary-3.jpg"],
+  network:   ["images/network-1.png", "images/network-2.png"],
+  food:      ["images/food-1.png", "images/food-2.png", "images/food-3.png"],
+  credit:    ["images/credit-1.jpg", "images/credit-2.png"],
+  ldr:       ["images/ldr-1.png", "images/ldr-2.jpg", "images/ldr-3.png", "images/ldr-4.png"],
+  skybound:  ["images/skybound-1.png", "images/skybound-2.png"]
+};
+
+/* ============================================================
+   OTHER PROJECTS DATA
+   ============================================================ */
+const OTHER_PROJECTS = [
+  {
+    gallery: "sentiment",
+    title: "Sentiment Analysis of Movie Reviews",
+    category: "Machine Learning · NLP",
+    desc: "End-to-end IMDb sentiment analysis system covering text preprocessing, feature extraction, model training, evaluation, and real-time inference through a Streamlit app.",
+    metric: "91.3% accuracy · 0.97 ROC-AUC",
+    tags: ["Python", "Scikit-learn", "TF-IDF", "LinearSVC", "Streamlit"],
+    links: { github: "sentimentGithub", docs: "sentimentDocs", presentation: "sentimentPresentation" }
+  },
+  {
+    gallery: "flower",
+    title: "Flower Recognition System",
+    category: "Deep Learning · Computer Vision",
+    desc: "Benchmarked EfficientNet, MobileNet, Inception, and ResNet architectures for image classification with a complete preprocessing, augmentation, training, and evaluation pipeline.",
+    metric: "98.5% accuracy (EfficientNet)",
+    tags: ["Python", "TensorFlow", "EfficientNet", "ResNet", "MobileNet"],
+    links: { github: "flowerGithub", docs: "flowerDocs", presentation: "flowerPresentation" }
+  },
+  {
+    gallery: "chatbot",
+    title: "Language Learning Chatbot",
+    category: "Full-Stack · Generative AI",
+    desc: "AI-powered language-learning platform offering conversational practice, grammar correction, vocabulary suggestions, real-time feedback, and a peer community space.",
+    metric: null,
+    tags: ["PHP", "MySQL", "OpenAI", "HTML", "CSS"],
+    links: { github: "chatbotGithub", srs: "chatbotSRS", sdd: "chatbotSDD", presentation: "chatbotPresentation" }
+  },
+  {
+    gallery: "habit",
+    title: "HabitHarbor",
+    category: "Full-Stack Web Development",
+    desc: "Habit-tracking application featuring personalized challenges, real-time goal progress tracking, and reward mechanisms designed to drive user retention.",
+    metric: null,
+    tags: ["MongoDB", "Node.js", "JavaScript"],
+    links: { github: "habitGithub", docs: "habitDocs", presentation: "habitPresentation" }
+  },
+  {
+    gallery: "culinary",
+    title: "Culinary Coach",
+    category: "Mobile Application",
+    desc: "Flutter app for recipe discovery, meal planning, and personalized cooking with a voice-guided cooking assistant, plus community and ingredient delivery features.",
+    metric: null,
+    tags: ["Flutter", "Firebase", "Dart"],
+    links: { github: "culinaryGithub", docs: "culinaryDocs", presentation: "culinaryPresentation" }
+  },
+  {
+    gallery: "network",
+    title: "Enterprise Network Security & AAA Authentication",
+    category: "Cybersecurity · Networking",
+    desc: "Secure enterprise network design integrating Cisco routers, switches, ASA firewall, and internal/guest/DMZ segments with AAA authentication and hardened remote access.",
+    metric: null,
+    tags: ["Cisco Packet Tracer", "RADIUS", "AAA", "IPsec VPN", "ACLs", "OSPF", "SSH"],
+    links: { github: "networkGithub", docs: "networkDocs", presentation: "networkPresentation" }
+  },
+  {
+    gallery: "food",
+    title: "Egyptian Food Recommendation Expert System",
+    category: "Knowledge-Based Systems · AI",
+    desc: "Knowledge-based recommendation system that suggests Egyptian dishes based on user preferences, dietary requirements, and meal characteristics.",
+    metric: null,
+    tags: ["Python", "Knowledge-Based Systems", "AI"],
+    links: { github: "foodGithub", docs: "foodDocs", presentation: "foodPresentation" }
+  },
+  {
+    gallery: "credit",
+    title: "Credit Card Approval Prediction",
+    category: "Machine Learning",
+    desc: "Machine learning system for credit-card approval prediction using genetic-algorithm-based feature selection, with multiple classification approaches evaluated and compared.",
+    metric: null,
+    tags: ["Python", "Scikit-learn", "Genetic Algorithm"],
+    links: { github: "creditGithub", docs: "creditDocs", presentation: "creditPresentation" }
+  },
+  {
+    gallery: "ldr",
+    title: "LDR-Based Automatic Lighting System",
+    category: "LDR Sensor · Electronic Circuits · Hardware Design",
+    desc: "Designed and implemented an automatic lighting system using a Light Dependent Resistor (LDR) to detect changes in ambient light intensity. Configured the circuit to automatically switch a light source ON in low-light conditions and OFF when sufficient light was detected.",
+    metric: "Sept 2025 – Feb 2026",
+    tags: ["LDR Sensor", "Electronic Circuits", "Hardware Design"],
+    links: { github: "ldrGithub", docs: "ldrDocs", presentation: "ldrPresentation", demo: "ldrDemo", simulation: "ldrSimulation" }
+  },
+  {
+    gallery: "skybound",
+    title: "Skybound Runner",
+    category: "Game Development",
+    desc: "2D endless runner game built in Unity, implementing player controls, procedural obstacle generation, collision detection, and scoring mechanics.",
+    metric: null,
+    tags: ["Unity", "C#"],
+    links: { github: "skyboundGithub", docs: "skyboundDocs", presentation: "skyboundPresentation" }
+  }
+];
+
+/* ============================================================
+   LINK RESOLUTION — fills hrefs and hides broken buttons
+   ============================================================ */
+const ICON_GITHUB = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>';
+const ICON_DOCS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>';
+const ICON_PRES = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v12H3z"/><path d="M12 15v6M8 21h8"/></svg>';
+const ICON_DEMO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>';
+const ICON_SRS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>';
+const ICON_SDD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>';
+const ICON_SIM = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>';
+const ICON_CERT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>';
+
+function isRealLink(value) {
+  if (!value) return false;
+  if (value === "#") return false;
+  if (typeof value === "string" && value.includes("_URL_HERE")) return false;
+  return true;
+}
+
+function resolveLinks(root = document) {
+  root.querySelectorAll("[data-link]").forEach(el => {
+    const key = el.getAttribute("data-link");
+    let value = CONFIG[key];
+
+    /* Email gets a mailto: prefix */
+    if (key === "email" && isRealLink(value) && !value.startsWith("mailto:")) {
+      value = "mailto:" + value;
+    }
+
+    if (!isRealLink(value)) {
+      el.style.display = "none";
+      el.setAttribute("aria-hidden", "true");
+      el.removeAttribute("href");
+      return;
+    }
+
+    el.setAttribute("href", value);
+    if (/^https?:\/\//i.test(value)) {
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+}
+
+/* ============================================================
+   8. GALLERY LOGIC (reusable, variable-length)
+   ============================================================ */
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function initGallery(root) {
+  const key = root.getAttribute("data-gallery");
+  const images = (GALLERIES[key] || []).filter(Boolean);
+  const altBase = root.getAttribute("data-alt") || "Project image";
+
+  if (!images.length) {
+    root.innerHTML = '<div class="gallery-empty">Add images to /images</div>';
+    return;
+  }
+
+  let index = 0;
+  let autoTimer = null;
+
+  /* Track */
+  const track = document.createElement("div");
+  track.className = "gallery-track";
+
+  images.forEach((src, i) => {
+    const slide = document.createElement("div");
+    slide.className = "gallery-slide";
+
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = altBase + " " + (i + 1);
+    img.loading = i === 0 ? "eager" : "lazy";
+    img.decoding = "async";
+    img.addEventListener("error", () => slide.classList.add("is-missing"));
+    img.addEventListener("click", () => {
+      if (slide.classList.contains("is-missing")) return;
+      openLightbox(src, img.alt);
+    });
+
+    slide.appendChild(img);
+    track.appendChild(slide);
+  });
+
+  root.appendChild(track);
+
+  const multiple = images.length > 1;
+  let prevBtn, nextBtn, dotsWrap;
+
+  function update() {
+    track.style.transform = "translateX(" + (-index * 100) + "%)";
+    if (dotsWrap) {
+      dotsWrap.querySelectorAll("button").forEach((d, i) => {
+        d.classList.toggle("active", i === index);
+        d.setAttribute("aria-current", i === index ? "true" : "false");
+      });
+    }
+  }
+
+  function goTo(i) {
+    index = (i + images.length) % images.length;
+    update();
+  }
+
+  if (multiple) {
+    /* Arrows */
+    prevBtn = document.createElement("button");
+    prevBtn.className = "gallery-nav prev";
+    prevBtn.setAttribute("aria-label", "Previous image");
+    prevBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
+    prevBtn.addEventListener("click", () => goTo(index - 1));
+
+    nextBtn = document.createElement("button");
+    nextBtn.className = "gallery-nav next";
+    nextBtn.setAttribute("aria-label", "Next image");
+    nextBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+    nextBtn.addEventListener("click", () => goTo(index + 1));
+
+    root.appendChild(prevBtn);
+    root.appendChild(nextBtn);
+
+    /* Dots */
+    dotsWrap = document.createElement("div");
+    dotsWrap.className = "gallery-dots";
+    dotsWrap.setAttribute("role", "tablist");
+    dotsWrap.setAttribute("aria-label", "Choose image");
+    images.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.setAttribute("aria-label", "Go to image " + (i + 1));
+      dot.addEventListener("click", () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    root.appendChild(dotsWrap);
+
+    /* Keyboard */
+    root.setAttribute("tabindex", "0");
+    root.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") { e.preventDefault(); goTo(index - 1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); goTo(index + 1); }
+    });
+
+    /* Swipe */
+    let startX = 0, startY = 0, dragging = false;
+    root.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      dragging = true;
+      stopAuto();
+    }, { passive: true });
+
+    root.addEventListener("touchend", (e) => {
+      if (!dragging) return;
+      dragging = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
+        goTo(dx < 0 ? index + 1 : index - 1);
+      }
+      startAuto();
+    }, { passive: true });
+
+    /* Auto-advance (respects reduced motion) */
+    function startAuto() {
+      if (prefersReducedMotion) return;
+      stopAuto();
+      autoTimer = setInterval(() => goTo(index + 1), 6500);
+    }
+    function stopAuto() {
+      if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+    }
+
+    root.addEventListener("mouseenter", stopAuto);
+    root.addEventListener("mouseleave", startAuto);
+    root.addEventListener("focusin", stopAuto);
+    root.addEventListener("focusout", startAuto);
+    document.addEventListener("visibilitychange", () => {
+      document.hidden ? stopAuto() : startAuto();
+    });
+
+    startAuto();
+  }
+
+  update();
+}
+
+/* ============================================================
+   OTHER PROJECT CARDS
+   ============================================================ */
+function buildOtherProjects() {
+  const grid = document.getElementById("projectsGrid");
+  if (!grid) return;
+
+  OTHER_PROJECTS.forEach(p => {
+    const card = document.createElement("article");
+    card.className = "p-card glass reveal";
+
+    const gallery = document.createElement("div");
+    gallery.className = "gallery";
+    gallery.setAttribute("data-gallery", p.gallery);
+    gallery.setAttribute("data-alt", p.title + " screenshot");
+
+    const body = document.createElement("div");
+    body.className = "p-body";
+
+    const cat = document.createElement("div");
+    cat.className = "p-cat";
+    cat.textContent = p.category;
+
+    const title = document.createElement("h3");
+    title.className = "p-title";
+    title.textContent = p.title;
+
+    const desc = document.createElement("p");
+    desc.className = "p-desc";
+    desc.textContent = p.desc;
+
+    body.appendChild(cat);
+    body.appendChild(title);
+    body.appendChild(desc);
+
+    if (p.metric) {
+      const m = document.createElement("span");
+      m.className = "p-metric";
+      m.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg>' + p.metric;
+      body.appendChild(m);
+    }
+
+    const tags = document.createElement("div");
+    tags.className = "tags";
+    tags.style.marginBottom = "16px";
+    p.tags.forEach(t => {
+      const s = document.createElement("span");
+      s.className = "pill";
+      s.textContent = t;
+      tags.appendChild(s);
+    });
+    body.appendChild(tags);
+
+    const actions = document.createElement("div");
+    actions.className = "actions";
+
+    const btnDefs = [
+      { key: p.links.github, label: "GitHub", icon: ICON_GITHUB },
+      { key: p.links.docs, label: "Docs", icon: ICON_DOCS },
+      { key: p.links.srs, label: "SRS", icon: ICON_SRS },
+      { key: p.links.sdd, label: "SDD", icon: ICON_SDD },
+      { key: p.links.presentation, label: "Presentation", icon: ICON_PRES },
+      { key: p.links.demo, label: "Demo", icon: ICON_DEMO },
+      { key: p.links.simulation, label: "Simulation", icon: ICON_SIM }
+    ];
+
+    btnDefs.forEach(def => {
+      if (!def.key) return;
+      const a = document.createElement("a");
+      a.className = "btn btn-sm";
+      a.setAttribute("data-link", def.key);
+      a.setAttribute("href", "#");
+      a.innerHTML = def.icon + def.label;
+      actions.appendChild(a);
+    });
+
+    body.appendChild(actions);
+
+    card.appendChild(gallery);
+    card.appendChild(body);
+    grid.appendChild(card);
+  });
+}
+
+/* ============================================================
+   9. THEME TOGGLE
+   ============================================================ */
+function initTheme() {
+  const saved = localStorage.getItem("theme");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const theme = saved || (systemDark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+
+  const btn = document.getElementById("themeToggle");
+  btn.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  });
+}
+
+/* ============================================================
+   10. NAVIGATION BEHAVIOR
+   ============================================================ */
+function initNav() {
+  const nav = document.getElementById("nav");
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileClose = document.getElementById("mobileClose");
+
+  /* Scroll shadow */
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 12);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* Mobile menu */
+  function openMenu() {
+    mobileMenu.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  }
+  function closeMenu() {
+    mobileMenu.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
+  hamburger.addEventListener("click", openMenu);
+  mobileClose.addEventListener("click", closeMenu);
+  mobileMenu.addEventListener("click", (e) => {
+    if (e.target === mobileMenu) closeMenu();
+  });
+  mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mobileMenu.classList.contains("open")) closeMenu();
+  });
+
+  /* Active link highlighting */
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      }
+    });
+  }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+
+  sections.forEach(s => observer.observe(s));
+}
+
+/* ============================================================
+   11. LIGHTBOX
+   ============================================================ */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxClose = document.getElementById("lightboxClose");
+let lastFocused = null;
+
+function openLightbox(src, alt) {
+  lastFocused = document.activeElement;
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || "";
+  lightbox.classList.add("open");
+  document.body.style.overflow = "hidden";
+  lightboxClose.focus();
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxImg.src = "";
+  document.body.style.overflow = "";
+  if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+});
+
+/* ============================================================
+   12. INITIALIZATION
+   ============================================================ */
+document.addEventListener("DOMContentLoaded", () => {
+  /* Footer year */
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* Theme first (avoids flash) */
+  initTheme();
+
+  /* Build dynamic project cards, then resolve links */
+  buildOtherProjects();
+  resolveLinks();
+
+  /* Init all galleries */
+  document.querySelectorAll("[data-gallery]").forEach(initGallery);
+
+  /* Nav */
+  initNav();
+
+  /* Scroll reveal */
+  const revealEls = document.querySelectorAll(".reveal");
+  if (prefersReducedMotion) {
+    revealEls.forEach(el => el.classList.add("visible"));
+  } else {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+    revealEls.forEach(el => revealObserver.observe(el));
+  }
+});
+</script>
+</body>
+</html>
